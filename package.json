@@ -1,0 +1,27 @@
+{
+  "name": "back-end-prisma",
+  "version": "1.0.0",
+  "description": "Projeto Back-End em NodeJS com Prisma ORM",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Back-End",
+    "SENAI",
+    "Javascript",
+    "Prisma"
+  ],
+  "author": "Ana Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
+  }
+}
