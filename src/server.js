@@ -1,5 +1,7 @@
 import express from "express";
 import { config } from "dotenv";
+// Importar rotas
+import router from "./routes/index.routes.js";
 
 config(); // Carrega variáveis de ambiente do arquivo .env
 const port = process.env.PORT || 5000;
@@ -9,10 +11,9 @@ const app = express();
 
 app.use(express.json()); // Parse de JSON
 
+
 // Rota base para verificar se o servidor está rodando
-app.get("/", (req, res) => {
-  res.json({ message: "API de Coleção de Animes funcionando!" });
-});
+app.use("/api", router);
 
 // Iniciar o servidor
 app.listen(port, () => {
